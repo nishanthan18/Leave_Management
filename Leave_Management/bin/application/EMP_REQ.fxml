@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="817.0" prefWidth="1442.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="821.0" prefWidth="1543.0" style="-fx-background-color: #ffddd1;" styleClass="nav-btn">
+         <children>
+            <AnchorPane layoutY="235.0" prefHeight="617.0" prefWidth="324.0" style="-fx-background-color: #FF7F50;">
+               <children>
+                  <Button fx:id="home" layoutY="13.0" mnemonicParsing="false" onAction="#home" prefHeight="50.0" prefWidth="324.0" styleClass="nav-btn" stylesheets="@application.css" text="HOME" textFill="#000000ce">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="premission" layoutY="64.0" mnemonicParsing="false" onAction="#premission" prefHeight="50.0" prefWidth="324.0" styleClass="nav-btn" stylesheets="@application.css" text="PERMISSION" textFill="#000000ce">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logout" layoutX="-2.0" layoutY="536.0" mnemonicParsing="false" onAction="#LOGOUT" prefHeight="36.0" prefWidth="316.0" styleClass="nav-btn" stylesheets="@application.css" text="Logout" textFill="#000000ce">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="manager_login" layoutX="-1.0" layoutY="122.0" mnemonicParsing="false" onAction="#manager_login" prefHeight="50.0" prefWidth="324.0" styleClass="nav-btn" stylesheets="@application.css" text="MANAGER LOGIN" textFill="#000000ce">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="65.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/return.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="back" layoutX="-3.0" layoutY="482.0" mnemonicParsing="false" onAction="#on_back" prefHeight="43.0" prefWidth="306.0" styleClass="nav-btn" stylesheets="@application.css" text="Back" textFill="#000000ce">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="229.0" prefWidth="324.0" style="-fx-background-color: #FF7F50;">
+               <children>
+                  <ImageView fitHeight="246.0" fitWidth="246.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/pngegg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="328.0" layoutY="13.0" prefHeight="86.0" prefWidth="1200.0" text="EMPLOYEE LEAVE REQUEST">
+               <font>
+                  <Font name="Consolas Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emp_id" layoutX="900.0" layoutY="155.0" prefHeight="48.0" prefWidth="520.0" />
+            <Label alignment="CENTER" layoutX="345.0" layoutY="137.0" prefHeight="74.0" prefWidth="454.0" text="Enter The Employee ID">
+               <font>
+                  <Font name="Consolas Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="submit" layoutX="729.0" layoutY="679.0" mnemonicParsing="false" onAction="#on_submit" prefHeight="62.0" prefWidth="380.0" stylesheets="@application.css" text="SUBMIT">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="column4" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Button>
+            <Label layoutX="1348.0" layoutY="21.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="64.0" prefWidth="142.0" style="-fx-background-color: #ffcab7;" visible="false" />
+            <Label alignment="CENTER" layoutX="370.0" layoutY="210.0" prefHeight="74.0" prefWidth="444.0" text="Enter The Employee name">
+               <font>
+                  <Font name="Consolas Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="335.0" layoutY="287.0" prefHeight="74.0" prefWidth="382.0" text="Enter The Reason">
+               <font>
+                  <Font name="Consolas Bold" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emmp_name" layoutX="902.0" layoutY="227.0" prefHeight="48.0" prefWidth="520.0" />
+            <TextArea fx:id="reason" layoutX="902.0" layoutY="309.0" prefHeight="184.0" prefWidth="524.0" />
+            <Label alignment="CENTER" layoutX="321.0" layoutY="530.0" prefHeight="72.0" prefWidth="197.0" text="Date">
+               <font>
+                  <Font name="Consolas Bold" size="35.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="900.0" layoutY="547.0" onAction="#calender" prefHeight="47.0" prefWidth="311.0" />
+         </children>
+         <stylesheets>
+            <URL value="@application.css" />
+            <URL value="@manoApplication.css" />
+            <URL value="@LoginApplication.css" />
+            <URL value="@LogApplication.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

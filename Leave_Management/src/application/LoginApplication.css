@@ -1,0 +1,64 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.nav-btn{
+	-fx-background-color:transparent;
+	-fx-cursor:hand ;
+	-fx-font-family:"Arial Rounded MT Bold";
+	-fx-font-size:20px;
+	-fx-text-fill:#420420;
+	-fx-alignment:CENTER-LEFT;
+	
+}
+.column4{
+    -fx-background-color: linear-gradient(#ff926b 20%, #ffb89e 80%);
+}
+.shadow{
+	-fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),6,0,0,0);
+	 
+}
+
+.white-bg{
+	-fx-background-color:#fff;
+	-fx-background-radius:6px;
+}
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#ff8051 0%, #ff926b 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #ffc9b5;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; 
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #ff6d38;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
